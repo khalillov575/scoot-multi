@@ -1,0 +1,220 @@
+.benefits {
+    margin-top: 450px;
+    
+}
+
+.benefits__title-visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+   
+}
+
+.benefits__section-list {
+    @include reset-list;
+    display: block;
+    flex-wrap: wrap;
+
+    :nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+}
+
+.first {
+    position: relative;
+
+    ::after {
+        position: absolute;
+        content: '';
+        top: 300px;
+        right: -180px;
+        width: 740px;
+        height: 150px;
+        background-image: url("../../img/svg/right-line.svg");
+        // o'ng  tepa tarafdagi strelka
+    }
+
+    ::before {
+        position: absolute;
+        content: '';
+        top: 10px;
+        right: -510px;
+        width: 445px;
+        height: 445px;
+        background-image: url("../../img/svg/circile.svg");
+        // O'ng taraf tepadagi aylana
+    }
+}
+
+.second {
+    position: relative;
+
+    ::before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: -510px;
+        width: 445px;
+        height: 445px;
+        background-image: url("../../img/svg/circile.svg") // chap tarfdagi aylana
+    }
+
+    ::after {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: -500px;
+        width: 740px;
+        height: 150px;
+        // transform: rotateY(180deg);
+        background-image: url("../../img/svg/left-line.svg");
+        // chap tarafdagi strelka
+    }
+
+}
+
+.three {
+    position: relative;
+
+    ::before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        right: -510px;
+        width: 445px;
+        height: 445px;
+        background-image: url("../../img/svg/circile.svg");
+        // o'ng taraf pasdagi aylana
+    }
+
+    ::after {
+        position: absolute;
+        content: '';
+        top: 0px;
+        right: -490px;
+        width: 740px;
+        height: 150px;
+        background-image: url("../../img/svg/right-line.svg");
+        // o'ng  pasdagi tarafdagi strelka
+    }
+
+}
+
+.benefits__section-item {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+
+.benefits__item-box {
+    padding: 0;
+    margin: 0;
+    width: 445px;
+    margin: 80px 120px;
+    display: block;
+}
+
+.benefits__item-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.benefits__item-text {
+    width: 445px;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+}
+
+.benefits__section-link {
+    font-family: 'Lexend Deca', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 39px;
+    border: 3px solid transparent;
+    background-color: $yellow;
+    margin-top: 40px;
+
+    &:hover {
+        background-color: #fff;
+        border: 3px solid $yellow;
+        color: $yellow;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    
+   
+    .benefits{
+        margin-top: 800px;
+    }
+    
+    .benefits__section-list {
+        
+        :nth-child(even) {
+            flex-direction: none;
+        }
+    }
+    .benefits__section{
+        margin: 0 auto;
+    }
+    .benefits__section-item {
+        display: block;
+       
+    }
+    .benefits__item-box{
+        width: 457px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    .benefits__item-title {
+        line-height: none;
+        letter-spacing: none;
+    }
+    
+    .benefits__item-text {
+        width: 573px;
+        margin-bottom: 40px;
+        line-height: none;
+        color: #495567;
+    }
+    
+    .first{
+        margin: 0 auto;
+        ::before{
+            right:-370px;
+            
+        }
+    }
+    .second{
+        margin: 0 auto;
+        ::before{
+            left: -500px;
+        }
+    }
+    .three{
+        margin: 0 auto;
+        ::before{
+            right: 0;
+            right: -370px;
+        }
+    }
+}

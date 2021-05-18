@@ -1,0 +1,190 @@
+.intro {
+    vertical-align: middle;
+    align-items: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        background: url("../../img/svg/arrow.svg");
+        position: absolute;
+        width: 450px;
+        height: 150px;
+        left: 705px;
+        top: 355px;
+    }
+
+    &::after {
+        content: '';
+        background: url("../../img/svg/line.svg");
+        position: absolute;
+        width: 202.5px;
+        height: 15px;
+        left: -150px;
+        top: 353px;
+    }
+}
+
+.intro-img {
+    background-image: url("../../img/Bitmap.png");
+    height: 650px;
+    width: 1440px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .intro-img{
+    background-image: url("../../img/Bitmap@2x.png");
+  }
+}
+
+.intro__title {
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #fff;
+    padding-top: 153px;
+    margin-top: 40px;
+}
+
+.intro__text {
+    width: 405px;
+    font-family: 'Lexend Deca', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    margin-left: 150px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.intro__link {
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 14px 39px;
+    background-color: #FCB72B;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    margin-left: 150px;
+    border: 3px solid transparent;
+
+    &:hover {
+        background-color: #2F3B59;
+        border: 3px solid $yellow;
+        color: $yellow;
+        background: #2F3B59;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+
+    }
+}
+@media screen and (max-width: 1110px){
+    .intro-img{
+        background-image: url("../../img/Bitmap_tablet.png");
+    }
+    @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .intro-img{
+    background-image: url("../../img/Bitmap_tablet@2x.png");
+    width: 768px;
+    height: 650px;
+  }
+}
+  .intro{
+      width: 573px;
+      margin: 0 auto;
+      text-align: center;
+      &::after{
+          display: none;
+      }
+      &::before{
+          top: 473px;
+          left: -200px;
+      }
+  }
+  .intro__title {
+    width: 573px;
+    margin-top: 40px;
+
+}
+
+.intro__text {
+    width: 573px;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.intro__link {
+    margin-left: 0px;
+}
+}
+
+@media screen and (max-width: 689px){
+    .intro-img{
+        background-image: url("../../img/Bitmap_mobile.png");
+    }
+    @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .intro-img{
+    background-image: url("../../img/Bitmap_mobile@2x.png");
+  }
+}
+.intro{
+    width: 311px;
+    margin: 0 auto;
+    text-align: center;
+    &::after{
+        display: none;
+    }
+    &::before{
+        top: 473px;
+        left: -300px;
+    }
+}
+.intro__title {
+  width: 311px;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.intro__text {
+  width: 311px;
+  margin-left: 0px;
+}
+
+.intro__link {
+  margin-left: 0px;
+  text-align: center;
+}
+}

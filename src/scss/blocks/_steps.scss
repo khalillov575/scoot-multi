@@ -1,0 +1,223 @@
+.steps {
+    margin-top: 400px;
+}
+
+.steps__section-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 974px;
+        height: 10px;
+        top: -40px;
+        left: -15%;
+        position: absolute;
+        background-image: url("../../img/Path.png");
+    }
+
+
+}
+
+.steps__section-item {
+    @include reset-list;
+    display: block;
+
+
+}
+
+.steps__section-box {
+    width: 350px;
+    position: relative;
+    margin-left: 20px;
+    display: block;
+
+}
+
+.steps__section-img {
+    top: -100px;
+    width: 96px;
+    height: 96px;
+    background-color: $yellow;
+    border-radius: 50px;
+    position: absolute;
+    background-image: url("../../img/phone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.phone {
+    background-image: url("../../img/phone.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+    .intro-img {
+        background-image: url("../../img/phone@2x.png");
+    }
+}
+
+.scooter {
+    background-image: url("../../img/scooter.png");
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+    .intro-img {
+        background-image: url("../../img/scooter@2x.png");
+    }
+}
+
+.shape {
+    background-image: url("../../img/Shape.png");
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+    .intro-img {
+        background-image: url("../../img/Shape@2x.png");
+    }
+}
+
+.steps__section-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    // line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+
+}
+
+.steps__section-text {
+    font-family: 'Lexend Deca', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+
+}
+
+@media screen and (max-width: $tablet) {
+
+    .steps {
+        margin-top: 300px;
+    }
+
+    .steps__section-list {
+        display: block;
+
+        &::before {
+            content: '';
+            transform: rotate(90deg);
+            width: 470px;
+            height: 10px;
+            left: -26%;
+            top: 175px;
+            background-image: url("../../img/Path.png");
+        }
+
+
+    }
+
+    .steps__section-item {
+        @include reset-list;
+        display: flex;
+        margin: 0 auto;
+
+
+    }
+
+    .steps__section-box {
+        width: 398px;
+        position: relative;
+        margin-left: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .phone {
+        top: 20px;
+        left: -35%;
+    }
+
+    .scooter {
+        top: 20px;
+        left: -35%;
+    }
+
+    .shape {
+        top: 20px;
+        left: -35%;
+    }
+}
+
+@media screen and (max-width: 689px) {
+    .steps {
+        margin-top: 200px;
+    }
+
+    .steps__section-box {
+        margin: 0 auto;
+    }
+
+    .steps__section-list {
+        margin: 0 auto;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .steps__section-title {
+        width: 311px;
+        margin-top: 110px;
+        text-align: center;
+    }
+
+    .steps__section-text {
+        width: 311px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .phone {
+        right: 130px;
+        left: auto;
+        top: 0px;
+    }
+
+    .scooter {
+        top: 0px;
+        left: auto;
+        right: 130px;
+
+    }
+
+    .shape {
+        top: 0px;
+        left: auto;
+        right: 130px;
+    }
+}
